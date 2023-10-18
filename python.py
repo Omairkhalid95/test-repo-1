@@ -52,24 +52,24 @@ env_data = {
 repo_response=  requests.post(f"{api_base_url}/user/repos",json=repo_data,headers= 
 {"Authorization": f"Bearer {personal_access_token}"})
 
-print(f"{repo}")
+  print(repo_response.status_code)
 if repo_response.status_code == 201: 
   print("Repo created sucessfully")
 
   file_response = requests.put(f"{api_base_url}/repos/{owner}/{repo}/contents/{file_name}", json=file_data, headers=
     {"Authorization": f"Bearer {personal_access_token}"})
   print("Readme.md file added")
-  print(f"{repo}")
+
   branch_response=  requests.put(f'{api_base_url}/repos/{owner}/{repo}/branches/{branch}/protection',json=branch_protection_rule,headers= 
 {"Authorization": f"Bearer {personal_access_token}"})
      #  url= f"{api_base_url}/repos/{owner}/test-repo-5/branches/{branch}/protection"
   print("2 reviewers  has been added")
-  print(f"{repo}")
+  
 
   env_response=  requests.put(f'{api_base_url}/repos/{owner}/{repo}/environments/{environment}',json=env_data,headers= 
 {"Authorization": f"Bearer {personal_access_token}"})
   print(f"Environment: {environment} is created  ")
-  print(f"{repo}")
+  
 
 
 
