@@ -1,7 +1,7 @@
 import requests
 import base64
 
-personal_access_token = "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"
+personal_access_token = "__token__"
 api_base_url = "https://api.github.com"
 branch = "main"
 
