@@ -32,9 +32,8 @@ jobs:
         owner: ${{ github.event.inputs.owner }}
         environment: ${{ github.event.inputs.environment }}
     - name: Python Script
-      run: |
-          chmod +x p python.py
-          python3 python.py
+      run: python3 --version
+          
 
     
 
