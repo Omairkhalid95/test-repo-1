@@ -1,0 +1,30 @@
+name: Python Task
+
+on:
+  
+
+  workflow_dispatch:
+    inputs:
+      repo:
+        required: true
+      owner:
+        required: true
+      environment:
+        required: true
+jobs:
+  #Checkout-Job:
+   # uses: Omairkhalid95/Reusable_workflow/.github/workflows/main.yml@reuse
+  build:
+    runs-on: ubuntu-latest
+     
+    steps:
+    - name: Git Checkout
+      uses: actions/checkout@v2
+    - name: Python Script
+    - run: |
+         python3 ./python.py
+       
+
+
+ 
+    
