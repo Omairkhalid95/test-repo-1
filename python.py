@@ -52,7 +52,7 @@ env_data = {
 repo_response=  requests.post(f"{api_base_url}/user/repos",json=repo_data,headers= 
 {"Authorization": f"Bearer {personal_access_token}"})
 
-print(repo_response.text)
+
 if repo_response.status_code == 201: 
   print("Repo created sucessfully")
 
