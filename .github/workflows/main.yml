@@ -27,7 +27,7 @@ jobs:
       with:
         tokenPrefix: __
         tokenSuffix: __
-        files: '["python.py"]'
+        files: '["./python.py"]'
       env:
         repo: ${{ github.event.inputs.repo }}
         owner: ${{ github.event.inputs.owner }}
