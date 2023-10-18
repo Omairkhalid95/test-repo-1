@@ -13,7 +13,7 @@ owner = __owner__
 repo = __repo__
 environment = __environment__
 
-__IMAGE_TAG__
+
 
 
 repo_data = {
