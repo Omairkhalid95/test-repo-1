@@ -20,6 +20,16 @@ jobs:
     steps:
     - name: Git Checkout
       uses: actions/checkout@v2
+    - name: Updated Variables
+      uses: cschleiden/replace-tokens@v1
+      with:
+        tokenPrefix: __
+        tokenSuffix: __
+        files: '["python.py"]'
+      env:
+        repo: ${{ github.event.inputs.repo }}
+        owner: ${{ github.event.inputs.owner }}
+        environment: ${{ github.event.inputs.environment }}
     - name: Python Script
     - run: |
          python3 ./python.py
