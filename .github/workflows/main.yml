@@ -1,6 +1,6 @@
 name: Python Task
 
-  
+on:
 
   workflow_dispatch:
     inputs:
