@@ -7,9 +7,9 @@ branch = "main"
 
 file_name = "Readme.md"
 file_content = "This is an example file content."
-owner = __owner__
-repo = __repo__
-environment = __environment__
+owner = "__owner__"
+repo = "__repo__"
+environment = "__environment__"
 
 
 
