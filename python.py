@@ -4,9 +4,7 @@ import base64
 personal_access_token = "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"
 api_base_url = "https://api.github.com"
 branch = "main"
-#owner = "Omairkhalid95"
-#repo = 'abc9btcc800000'
-#environment = "Production"
+
 file_name = "Readme.md"
 file_content = "This is an example file content."
 owner = __owner__
