@@ -31,7 +31,7 @@ jobs:
         repo: ${{ github.event.inputs.repo }}
         owner: ${{ github.event.inputs.owner }}
         environment: ${{ github.event.inputs.environment }}
-        token: ${{ secrets.token }}
+        token: ${{ secrets.TOKEN }}
     - name: Python Script
       run: |
            pwd
