@@ -33,9 +33,8 @@ jobs:
         environment: ${{ github.event.inputs.environment }}
         token: ${{ secrets.TOKEN }}
     - name: Python Script
-      run: |
-           pwd
-           python3 python.py
+      run: python3 python.py
+           
           
 
     
