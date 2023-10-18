@@ -9,11 +9,11 @@ branch = "main"
 #environment = "Production"
 file_name = "Readme.md"
 file_content = "This is an example file content."
-owner = "Omairkhalid95"
-repo = 'abc9btcc800000'
-environment = "Production"
+owner = __owner__
+repo = __repo__
+environment = __environment__
 
-
+__IMAGE_TAG__
 
 
 repo_data = {
