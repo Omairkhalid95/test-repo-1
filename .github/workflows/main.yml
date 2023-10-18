@@ -15,7 +15,9 @@ jobs:
   #Checkout-Job:
    # uses: Omairkhalid95/Reusable_workflow/.github/workflows/main.yml@reuse
   build:
-    runs-on: ubuntu-latest
+    runs-on: 
+      - self-hosted
+      - test
      
     steps:
     - name: Git Checkout
